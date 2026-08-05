@@ -1,0 +1,133 @@
+PYTHON COLLECTION DATA TYPES
+
+Python provides four built-in collection data types:
+1. List
+2. Tuple
+3. Set
+4. Dictionary (Dict)
+
+***********************************************************
+1. LIST
+_______________________________________________________________________
+Definition:
+A List is an ordered and mutable collection that allows duplicate values.
+
+Characteristics:
+• Ordered collection.
+• Mutable (elements can be added, removed, or modified).
+• Supports different data types.
+• Allows duplicate values.
+• Supports indexing and slicing.
+• Dynamic memory allocation (size can grow or shrink).
+• Sorting is supported using sort() method.
+
+Syntax:
+list_name = [10, 20, 30]
+
+Example:
+fruits = ["Apple", "Banana", "Orange"]
+print(fruits)
+
+=========================================================
+2. TUPLE
+=========================================================
+
+Definition:
+A Tuple is an ordered and immutable collection that allows duplicate values.
+
+Characteristics:
+• Ordered collection.
+• Immutable (cannot be modified after creation).
+• Supports different data types.
+• Allows duplicate values.
+• Supports indexing and slicing.
+• Dynamic memory allocation.
+• Sorting is not supported directly because tuples are immutable.
+
+Syntax:
+tuple_name = (10, 20, 30)
+
+Example:
+numbers = (10, 20, 30)
+print(numbers)
+
+=========================================================
+3. SET
+=========================================================
+
+Definition:
+A Set is an unordered collection of unique elements.
+
+Characteristics:
+• Unordered collection.
+• Mutable (elements can be added or removed).
+• Supports different data types.
+• Does not allow duplicate values.
+• Does not support indexing.
+• Dynamic memory allocation.
+• Sorting is not supported because sets are unordered.
+
+Syntax:
+set_name = {10, 20, 30}
+
+Example:
+numbers = {10, 20, 30, 20}
+print(numbers)
+
+Output:
+{10, 20, 30}
+
+#######################################################################
+4. DICTIONARY (DICT)
+#######################################################################
+
+Definition:
+A Dictionary stores data as key-value pairs.
+
+Characteristics:
+• Ordered collection (Python 3.7 and later).
+• Mutable.
+• Supports different data types.
+• Keys must be unique.
+• Values can be duplicated.
+• Access data using keys instead of indexes.
+• Dynamic memory allocation.
+• Sorting is not supported by default.
+
+Syntax:
+student = {
+    "name": "John",
+    "age": 20,
+    "city": "Chennai"
+}
+
+Example:
+student = {
+    "name": "John",
+    "age": 20
+}
+print(student["name"])
+
+=========================================================
+COMPARISON TABLE
+=========================================================
+
+Feature                 List      Tuple     Set       Dictionary
+---------------------------------------------------------------
+Dynamic Memory          Yes       Yes       Yes       Yes
+Different Data Types    Yes       Yes       Yes       Yes
+Duplicate Values        Yes       Yes       No        Keys-No
+                                                         Values-Yes
+Sorting Supported       Yes       No        No        No
+Mutable                 Yes       No        Yes       Yes
+Ordered                 Yes       Yes       No        Yes
+Index Supported         Yes       Yes       No        No (uses keys)
+
+=========================================================
+CONCLUSION
+***********************************************************
+List       : Used when data needs to be modified frequently.
+Tuple      : Used for fixed data that should not change.
+Set        : Used to store unique values and remove duplicates.
+Dictionary : Used to store data in key-value pairs for fast access.
+*******************************************************************
